@@ -1,0 +1,27 @@
+{
+  "name": "dashboard-application",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "npm install --prefix client && npm install --prefix server",
+    "client": "npm run dev --prefix client",
+    "server": "npm run dev --prefix server",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keshav1511/dashboard-application.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/keshav1511/dashboard-application/issues"
+  },
+  "homepage": "https://github.com/keshav1511/dashboard-application#readme",
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
